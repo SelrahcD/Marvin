@@ -42,7 +42,7 @@
 
 	 			// Start all modules
 	 			findit.find('../modules').on('file', function(file, stat){
-	 				//If its file is start.js we need it. This should start module
+	 				//If the file is start.js we need it an we will start the module
 					if(file.endsWith('start.js')){
 						var module = require(file);
 						module.start(Marvin);
